@@ -7,14 +7,6 @@ let car ={
   averageSpeed:120,
   distance:420,
 }
-//Задание 1.2
-let car ={
-  manufacturer:"Mercedes",
-  model:"GLC",
-  yearOfIssue:2020,
-  averageSpeed:120,
-  distance:420,
-}
 
 function ShowTime(distance,averageSpeed){
   return {distance:distance, averageSpeed:averageSpeed}
@@ -25,10 +17,11 @@ let speed=ShowTime(120);
 
 function ShowTimeInRoud(distance,averageSpeed){
  
- let result =car.distance/car.averageSpeed;
+let result =car.distance/car.averageSpeed;
  
- alert (result);
+alert (result);
 }
+
 ShowTimeInRoud(roud,speed);
 
 
@@ -38,6 +31,7 @@ let obj1 = {
   numeric:2,
   denominator:4,
 }
+
 let obj2 = {
   numeric:1,
   denominator:3,
@@ -49,6 +43,7 @@ function Grit(numeric,denominator){
 
 let gritOne=Grit(2,4);
 let gritTwo=Grit(1,3);
+
 // умножение дробей
 function multiGrit(obj1,obj2){
  
@@ -103,26 +98,50 @@ function dedGrit(obj1,obj2){
    interval:30,
  }
 
-  for (let i=1;i<3600;i++){
-    function setTime (hours){
-        return function setMinutes (minutes=00){
-          return function setSeconds (seconds=00){
-            return `${hours}:${minutes}:${seconds}`
-            }
-        }
-    }
-    }
-    let resultTime=setTime(12)()();      
-    alert(resultTime);
+function showTime(hour,minute,second){
+  return `${hour}:${minute}:${second}`;
+     }
 
-/*  задание 3.2  не доделала
-    let interval = prompt ("Сколько добавить секунд?",0)
-    function timePluseSec(hour,minute,interval){
-   const plusSec= (second+interval)%60;
-   const plusMin=(minute+Math.floor((second+interval)%60)%60);
-   const plusHour=(hour+Math.floor((minute+interval)%60))%24;
-   return `${plusHour}:${plusMin}:${plusSec}`
-    }
-    let resultTwo = timePluseSec(12,30,40);
-    alert(resultTwo)
-    */
+    let newFunction= showTime(12,30,40);
+
+   // let showTimeTwo = ()=>{
+//}
+
+alert(`${newFunction}`)
+
+function showTime(hour,minute,second){
+return `${hour}:${minute}:${second}`;
+}
+    
+let  timePluseSec = (hour,minute,second)=>{
+let interval=40;
+let plusSec= (second+interval)%60;
+let plusMin=(minute+Math.floor((second+interval)/60));
+return `${hour}:${plusMin}:${plusSec}`
+}
+
+let timeNewWhitSec=timePluseSec(12,10,40);
+   
+alert (`исходное время 12:10:40, при увелечении на 40 секунд ${timeNewWhitSec}`) // при увелечении секунд
+
+let  timePluseMin = (hour,minute,second)=>{
+let interval=40;
+let plusMin= (minute+interval)%60;
+let plusHour=(hour+Math.floor((minute+interval)/60));
+return `${plusHour}:${plusMin}:${second}`
+}
+
+let timeNewWhitMin=timePluseMin(12,30,40);
+
+   
+alert (`исходное время 12:10:40, при увелечении 40 минут ${timeNewWhitMin}`) // при увелечении минут
+
+let  timePluseHour = (hour,minute,second)=>{
+let interval=6;
+let plusHour= (hour+interval)%24;
+return `${plusHour}:${minute}:${second}`
+}
+
+let timeNewWhitHour=timePluseHour(22,30,40);
+ 
+alert (`исходное время 12:10:40, при увелечении на 6 часов ${timeNewWhitHour}`) // при увелечении часов
