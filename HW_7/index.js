@@ -85,7 +85,21 @@ let strThr=strTwo.join(", ");
 
 alert (strThr);
 console.log(strThr); //дублирую вывод  в консоль
+<<<<<<< Updated upstream
 
 // задание 10
 
  
+=======
+/*
+// задание 10 не завершена
+
+let templNew= templ (template,index);
+
+ print.forEach(templNew)=> {
+       template.replace( '%', {index}+1);
+ };
+
+ print("Today is 1% %2.%3.%4", "Monday",10,8, 2020)
+ */
+>>>>>>> Stashed changes
