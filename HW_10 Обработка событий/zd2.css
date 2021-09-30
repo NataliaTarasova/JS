@@ -1,0 +1,44 @@
+.block-big{
+    width: 400px;
+    height: 250px;
+    margin: 5%;
+    background-color: gray;
+    
+}
+
+.block-small{
+    width: 80%;
+    margin-top: 10%;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(161, 219, 230);
+    text-align: center;
+}
+.button-up{
+    margin: 5%;
+    background-color: gray;
+   
+}
+.button-down{
+    width: 80%;
+    margin: 5%;
+}
+.pole-class{ 
+    margin: 10%;
+    width: 500px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ball {
+    position: absolute;
+    left: 0; 
+    top: 0;
+    transition: 1s all;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
