@@ -1,8 +1,11 @@
-// через версию DOM
-document.getElementById('hiden').onclick = function() {
-    document.getElementById('text').hidden = true;
-  }
 
-document.getElementById('open').onclick = function() {
-   return document.getElementById('text');
-} 
+document.addEventListener('click', function (event){
+  let id = event.target.dataset.toggleId;
+  if (!id) return;
+  let elem = document.getElementById(id);
+  elem.hidden=!elem.hidden;
+})
+
+document.getElementById('hider').onclick = function() {
+  document.getElementById('open').hidden = true;
+}

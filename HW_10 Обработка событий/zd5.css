@@ -1,0 +1,12 @@
+.highlight {
+    background-color: orange;
+}
+
+li {
+    cursor: pointer;
+    padding: 5px;
+}
+
+body{
+    margin: 10%;
+}
