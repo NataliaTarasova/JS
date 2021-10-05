@@ -1,0 +1,14 @@
+.lane{
+    width: 200px;
+    height: 15px;
+    margin: 30px;
+    background-color: beige;
+}
+.runner{
+    width: 10px;
+    height: 25px;
+    position: relative;
+    background-color: blue;
+    cursor: pointer;
+    top: -5px;
+}
