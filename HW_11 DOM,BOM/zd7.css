@@ -1,0 +1,12 @@
+.list{
+    width: 400px;
+    display: block;
+    margin: 10%;
+}
+.highlight {
+    background: rgb(255, 251, 0);
+  }
+
+  li {
+    cursor: pointer;
+  }

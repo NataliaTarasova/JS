@@ -1,0 +1,14 @@
+ul{
+    margin: 10%;
+}
+li{
+    padding: 10px;
+}
+a { 
+    text-decoration: none; 
+    color: black;
+   } 
+.change{
+    border-bottom-style:dotted;
+    border-color: brown;
+}
