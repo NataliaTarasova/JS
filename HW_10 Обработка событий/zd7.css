@@ -1,0 +1,13 @@
+.block-div{
+    width: 350px;
+    height: 300px;
+    margin: 10%;
+    background-color: blanchedalmond;
+    padding-top: 5%;
+}
+.link click{
+    cursor: pointer;
+}
+.link click:hover{
+    font-weight: bold;
+}

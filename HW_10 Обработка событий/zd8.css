@@ -1,0 +1,8 @@
+.block-text, .edit{
+    display: block; 
+    margin-top: 5%; 
+    margin-left: 5%; 
+    width: 300px; 
+    height: 200px; 
+    background-color: honeydew;
+}
