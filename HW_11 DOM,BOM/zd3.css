@@ -1,0 +1,14 @@
+.container{
+    margin: 10%;
+    list-style-type: none;
+    width: 400px;
+    display: block;
+}
+
+dt{
+    background-color: cadetblue;
+    cursor: pointer;
+    display: block;
+}
+
+dd{display: none;}
