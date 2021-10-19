@@ -11,4 +11,6 @@ dt{
     display: block;
 }
 
-dd{display: none;}
+.hidden{
+    display: none;
+}
