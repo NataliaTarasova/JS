@@ -1,0 +1,13 @@
+.block-text{
+    width: 500px;
+    height: auto;
+    background-color: blanchedalmond;
+    border: 1px solid gray;
+    margin: 10%;
+    padding: 40px;
+}
+.block, .edit{
+    width: 400px;
+    display: block;
+    margin-left: 10px;
+}
