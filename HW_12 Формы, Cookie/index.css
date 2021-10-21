@@ -1,0 +1,40 @@
+.container{
+    width: 800px;
+    margin: 10%;
+    background-color: rgba(248, 175, 190, 0.918);
+    display: block;
+}
+
+.form{
+    margin-left: 30%;
+    padding-top: 2%;
+    width: 350px;
+}
+
+input{
+    width: 98%;
+}
+
+select{
+    width: 100%;
+}
+.color{
+    width: 100%;
+    margin-top: 5%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button{
+    width: 100%;
+    background-color: rgb(122, 200, 202);
+    margin-top: 3%;
+    padding: 5px;
+}
+
+.block{
+    width: 33%;
+    height: 120px;
+}

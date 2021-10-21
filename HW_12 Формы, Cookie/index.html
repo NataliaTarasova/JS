@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center; padding-top: 20px;">Create new color</h2>
+        <form id="form" class="form" type="submit">
+            <p>Color:</p>
+            <p id="colorError" style="color: red; text-align: right;"></p>
+            <input id="color" type="text" required></input>
+            <br>
+            <p>Type:</p>
+            <select id="type" type="submit">
+                <option>RGB</option>
+                <option>RGBA</option>
+                <option>HEX</option>
+            </select>
+            <br>
+            <p>Code:</p>
+            <p id="codeError" style="color: red; text-align: right;"></p>
+            <input id="code" type="text" required></input>
+            <br><br>
+            <button id="button" type="submit">Save</button>
+        </form>
+        <h3 style="text-align: center;">All colors</h3>
+        <div id="colorBlocksContainer" class="color">
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
