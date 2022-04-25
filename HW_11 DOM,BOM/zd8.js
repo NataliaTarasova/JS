@@ -1,28 +1,18 @@
-let blockArea = document.getElementById('block');
+let blockArea = document.getElementById('block');      //не могу найти ошибку, при клике данная данная запись работала
 let area = null;
 
-block.onclick = function(event) {
-  if (event.target.tagName != "blockArea") return;
+blockArea.addEventListener("keydown", (event)=>{         //обработчик событий на блок
+  event.preventDefault();
 
-  if (event.ctrlKey && event.key.toLowerCase()==="e"){
-    editStart(event.target);
-  } 
+  if (event.ctrlKey && event.key.toLowerCase()==="e"){   //условие при нажатии клавиш реализовать  ф-ию
+  editStart();
+}
 
 function editStart() {
-  area = document.createElement('textarea');
+  area = document.createElement('textarea');              //создается новый элемент,класс,меняется местами при кейдовн
   area.className = 'edit';
   area.value = blockArea.innerHTML;
   blockArea.replaceWith(area);
   area.focus();
   } 
-}
-/*
-document.addEventListener("keydown", (event)=>{
-  event.preventDefault();
-
-  //console.log(event.key);
-
-  if (event.ctrlKey && event.key.toLowerCase()==="e");
- // console.log("Edit");
 })
-*/

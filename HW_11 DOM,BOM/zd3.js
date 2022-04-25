@@ -1,13 +1,12 @@
 const container=document.querySelector(".container");
 
-const titleList=document.querySelectorAll(".link");
+const titleList=document.querySelectorAll("dd");
 
 container.addEventListener("click", (event)=>{
-  console.log(event.target);
-
-  if (event.target.classList.includes('link'))
-
-  titleList.forEach((link) => link.classList.add("hidden"));
+ 
+  titleList.forEach((titleList) => titleList.classList.add("hidden"));
   event.target.classList.remove("hidden");
-  
-});
+ 
+  }
+);
+
